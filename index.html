@@ -1,301 +1,219 @@
-<title>Greatsword V3</title>
- <script>
-        var secretCode = '';
-        var expectedCode = 'upupdowndownleftrightleftrightbastart';
 
-        function checkSecret(event) {
-            var char = String.fromCharCode(event.keyCode || event.which);
-            secretCode += char;
-            if (secretCode === expectedCode) {
-                window.location.href = 11111secret11111.html";
-                secretCode = '';
-            }
-        }
-
-        document.addEventListener('keypress', checkSecret);
-    </script>
-<style>
-    ::-webkit-scrollbar {
-        display: none;
-    }
-    scrollbar-width: none;
-    ms-overflow-style: none;
-</style>
-<style>
-   img {
-     display: block;
-     margin: auto;
-     position: absolute;
-     top: 20%;
-     left: 0;
-     right: 0;
-   }
- </style>
-     <style>
-         body {
-             margin: 0;
-             padding: 0;
-             display: flex;
-             align-items: center;
-             justify-content: center;
-             height: 100vh;
-             background-color: #f5f5f5;
-         }
- 
-         .enlarged-text {
-             font-size: 2.5em;
-             font-family: 'Arial', Courier, monospace;
-             color: #bcbcbc;
-             position: absolute;
-             top: 32%;
-             left: 50%;
-             transform: translate(-50%, -50%);
-         }
-     </style>
- </head>
- <body>
-     <div class="enlarged-text">
-      <h1>Greatsword</h1>
-     </div>
-<style>
-   body {
-     background-color: #171717;
-   }
- </style>
-<script src="/js/index.js"></script>
-<script src="/js/go.js"></script>
-<div class="title">
- <h1 id="title1"></h1>
-</div>
-<div class="searchbox" id="searchbox">
- <input class="search" id="search" placeholder='Search Google or input a URL...' type='text'/>
-</div>
-<div class="icons">
-</div>
-<style>
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap");
-
-.bg{
- top: 0%;
- left: 0%;
- position: absolute;
- width:100%;
- height:100%;
-}
-.searchbox {
-  width: 45%;
-  height: 9%;
-  color: #FFFFFF;
-  position: absolute;
-  left: 28%;
-  top: 45%;
-  background: rgba(88, 87, 87, 0.5); /* Half-transparent white background */
-  border-radius: 25px;
-}
-
-.search {
-  text-align: center;
-  background: transparent;
-  border-radius: 25px;
-  border: 4px solid #565555;
-  color: #ffffff;
-  width: 100%;
-  height: 100%;
-}
-.title{
- font-family: "Roboto", Arial, Helvetica, sans-serif;
- position: absolute;
- width: 100%;
- height: 100px;
- top:15%;
- float: center;
- align: center;
- text-align: center;
- color: #FFFFFF;
-}
-::placeholder {
- margin: auto;
- color: #FFFFFF;
- font-size: 1.2em;
-}
-.icons{
- align: center;
- text-align: center;
- position: absolute;
- width: 100%;
- height: 70px;
- bottom: 0%;
- left: 0%;
-}
-</style>
-<script>
-var proxy=localStorage.getItem("proxy");
-if (proxy==undefined){
- proxy="Corrosion";
-}
-var fontsize1=2560/screen.width*18;
-var fontsize2=2560/screen.width*6;
-
-title1.style.fontSize = fontsize1+"px";
-search.style.fontSize = fontsize2+"px";
- 
-document.addEventListener("keypress", function onEvent(event) {
-   if (event.key === "Enter") {
-     var url=search.value;
-     window.location.href=window.location.href+"service/gateway?url=" + url;
-   }
-});
-</script>
-<style>
-  .bottom-image {
-  position: absolute;
-  bottom: -100;
-  left: 50%;
-  transform: translateX(-50%);
-}
-</style>
-<style>
-  .bottom-heading {
-      position: fixed;
-      left: 0;
-      bottom: 150;
-      width: 100%;
-      text-align: center;
-      font-family: Arial, sans-serif;
-      font-size: 2em;
-      color: rgb(166, 165, 165);
-  }
-</style>
-</head>
-<body>
-</body>
-<style>
-    button {
-      border-radius: 5px;
-      border: 3px solid rgb(61, 59, 59);
-      font-family: Arial, sans-serif;
-  font-size: 100%;
-  background-color: rgb(53, 51, 51);
-  color: white;
-  padding: 10px 20px;
-  cursor: pointer;
-}
-  </style>
-  <style>
-    button:hover {
-  background-color: rgb(48, 48, 48);
-}
-</style>
-<script>
-    function blank(){
-      (function () {var url = document.URL; var urlObj = new window.URL(window.location.href); win = window.open(); win.document.body.style.margin = "0"; win.document.body.style.height = "100vh"; var iframe = win.document.createElement("iframe"); iframe.style.border = "none"; iframe.style.width = "100%"; iframe.style.height = "100%"; iframe.style.margin = "0"; iframe.referrerpolicy = "no-referrer"; iframe.allow = "fullscreen"; iframe.src = url.toString(); win.document.body.appendChild(iframe); var script = win.document.createElement("script"); script.src = ""; win.document.body.appendChild(script); })();
-    }
-    </script>
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-
       body {
         margin: 0;
-        padding: 0;
-      }
-      
-      .navbar {
-        background-color: #333;
-        padding: 10px;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        z-index: 999;
-        border-top: 2px solid #000000;
-        border-bottom: 2px solid #000000;
-      }
-  
-      .navbar ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        display: flex;
-      }
-  
-      .navbar ul li {
-        display: inline;
-      }
-  
-      .navbar ul li a {
-        color: #fff;
-        text-decoration: none;
-        padding: 10px;
+        overflow: hidden;
         font-family: Arial, sans-serif;
-        font-size: 18px;
-        opacity: 0.7;
-        transition: opacity 0.3s ease;
       }
-  
-      .navbar ul li a:hover {
-        background-color: #555;
-        opacity: 1;
+    
+      #background {
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+        background: radial-gradient(circle, rgb(0, 0, 0), rgb(1, 44, 42));
       }
-  
-
-      .content {
-        margin-top: 50px; 
-        padding: 20px;
+    
+      .star {
+        position: absolute;
+        background: rgb(57, 255, 215);
+        border-radius: 50%;
+        transform: scale(0);
+        animation: sparkle 2s infinite, drift linear infinite;
       }
-  
-      .navbar-brand {
-        color: #fff;
-        font-family: Arial, sans-serif;
-        font-size: 18px;
-        margin-left: auto;
-        margin-right: 25px; 
+    
+      @keyframes sparkle {
+        0%, 100% {
+          opacity: 0;
+          transform: scale(0);
+        }
+        50% {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+    
+      @keyframes drift {
+        0%, 100% {
+          transform: translate(0, 0);
+        }
+        50% {
+          transform: translate(50px, -50px);
+        }
       }
     </style>
-  </head>
-  <body>
-    <div class="navbar">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="games.html">Games</a></li>
-        <li><a href="chat.html">Chat</a></li>
-        <li><a href="https://discord.gg/BMxe6D9CKv">Discord</a></li>
-        <li><a href="https://github.com/Tacogamerman/Greatsword-v3">GitHub</a></li>
-        <li class="navbar-brand">Sword Stuff</li>
-      </ul>
-    </div>
-    <style>
-        .button-container {
-          position: fixed;
-          bottom: 30%;
-          left: 50%;
-          transform: translateX(-50%);
-          text-align: center;
-          padding: 10px;
+    </head>
+      <div id="background">
+        <!-- Generating stars -->
+        <script>
+          const numStars = 300;
+          const background = document.getElementById('background');
+    
+          for (let i = 0; i < numStars; i++) {
+            const star = document.createElement('div');
+            star.classList.add('star');
+            star.style.width = `${Math.random() * 3}px`;
+            star.style.height = star.style.width;
+            star.style.left = `${Math.random() * 100}vw`;
+            star.style.top = `${Math.random() * 100}vh`;
+    
+            background.appendChild(star);
+          }
+        </script>
+      </div>
+    </body>
+        <style>
+          body {
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+          }
+          input {
+            margin-bottom: 10px;
+          }
+        </style>
+      <style>
+        .image-container {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
         }
-        
-        .button-container a.button {
-            border-radius: 5px;
-      border: 3px solid rgb(61, 59, 59);
-      font-family: Arial, sans-serif;
-  font-size: 100%;
-  background-color: rgb(53, 51, 51);
-  color: white;
-  padding: 10px 20px;
-  cursor: pointer;
-  text-decoration: none;
-  margin: 5px;
+    
+        .image {
+          width: 250px;
+          height: 250px;
+          border: 2px solid #daf3f1;
+          margin: 40px;
+          padding: 10px;
+          box-sizing: border-box;
+          transition: all 0.3s ease;
+        }
+    
+        .image:hover {
+          transform: scale(1.1);
+          border-color: #9900ff;
         }
       </style>
     </head>
-    <body>
-      <div class="button-container">
-        <a href="games.html" class="button">Greatsword Games</a>
-                <script>
-            function blank(){
-              (function () {var url = document.URL; var urlObj = new window.URL(window.location.href); win = window.open(); win.document.body.style.margin = "0"; win.document.body.style.height = "100vh"; var iframe = win.document.createElement("iframe"); iframe.style.border = "none"; iframe.style.width = "100%"; iframe.style.height = "100%"; iframe.style.margin = "0"; iframe.referrerpolicy = "no-referrer"; iframe.allow = "fullscreen"; iframe.src = url.toString(); win.document.body.appendChild(iframe); var script = win.document.createElement("script"); script.src = ""; win.document.body.appendChild(script); })();
-            }
-            </script>
-            <button onclick="blank();">Open in about:blank</button>
-            <a href="more.html" class="button">More...</a>
+    <script>
+        javascript:(function() {
+  var menu = document.createElement('div');
+  var menuContent = document.createElement('div');
+  var closeButton = document.createElement('span');
+  var button = document.createElement('button');
 
-      </div>
+  menu.style.cssText = `
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+    background-color: rgba(0, 255, 255, 0.2); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    width: 200px;
+  `;
+
+  menuContent.style.padding = '10px';
+
+  closeButton.style.cssText = `
+    float: right;
+    cursor: pointer;
+    color: #333;
+  `;
+  closeButton.innerHTML = '&times;';
+  closeButton.onclick = function() {
+    menu.remove();
+  };
+
+  button.innerHTML = 'Launch ByeBlocker';
+  button.style.cssText = `
+    font-family: Arial;
+    font-size: 16px;
+    color: #fff;
+    background-color: #333;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+  `;
+  button.onclick = function() {
+    var link = prompt("Url?");
+    var proxy = 'https://api.codetabs.com/v1/proxy?quest=';
+    fetch(proxy + link)
+      .then((response) => response.text())
+      .then((text) => document.write(text));
+    var all = document.getElementsByTagName("*");
+    for (var i = 0, max = all.length; i < max; i++) {
+      if (all[i].src) {
+        all[i].src = new URL(all[i].src, link).href;
+        all[i].src = proxy + all[i].src;
+      }
+    }
+    window.onbeforeunload = function(e) {
+      e.preventDefault();
+      alert(e.toString());
+    };
+    function locationHashChanged(e) {
+      e.preventDefault();
+      alert(e);
+      window.location = new URL(e.oldURL, e.newURL).href;
+    }
+    window.onhashchange = locationHashChanged;
+  };
+
+  menuContent.appendChild(button);
+  menuContent.appendChild(closeButton);
+  menu.appendChild(menuContent);
+  document.body.appendChild(menu);
+
+  var isDragging = false;
+  var mouseOffset = { x: 0, y: 0 };
+
+  menuContent.addEventListener('mousedown', function(e) {
+    isDragging = true;
+    mouseOffset.x = e.pageX - menu.offsetLeft;
+    mouseOffset.y = e.pageY - menu.offsetTop;
+  });
+
+  document.addEventListener('mousemove', function(e) {
+    if (isDragging) {
+      menu.style.left = (e.pageX - mouseOffset.x) + 'px';
+      menu.style.top = (e.pageY - mouseOffset.y) + 'px';
+    }
+  });
+
+  document.addEventListener('mouseup', function() {
+    isDragging = false;
+  });
+})();
+    </script>
+  <head>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #000; 
+    }
+    .bottom-left {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      color: rgba(255, 255, 255, 0.2); 
+      padding: 10px;
+    }
+  </style>
+  </head>
+  <body>
+    <div class="bottom-left">
+Tacogamerman on github
+ </div>
+  </body>
+  
