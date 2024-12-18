@@ -1,95 +1,66 @@
 <!DOCTYPE html>
-<html>
-
-<head>
-    <title>Simple web page Template</title>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>VanishGames - Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#FC6A04">
+    <meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#FC6A04">
     <link rel="stylesheet" href="style.css">
-</head>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <button onclick="location.href='index'">VanishGames</button>
+        <button onclick="location.href='about'">About</button>
+        <button onclick="location.href='games'">Games</button>
+      </nav>
+    </header>
 
-<body>
-    <nav class="navbar background">
-        <div class="logo">
-            <img src="https://media.geeksforgeeks.org/gfg-gg-logo.svg" style="height: 30px;" alt="Logo">
+    <!-- App Menu -->
+    <div id="app-menu-container">
+      <button id="app-menu-button">☰</button>
+      <div id="app-menu-grid">
+        <div class="app-menu-item" data-link="https://oragne.dev">
+          <img src="https://oragne.dev/favicon/apple-icon.png" alt="oragne.dev" />
+          <p>oragne.dev</p>
         </div>
-        <ul class="nav-list">
-            <li><a href="#web">Web Technology</a></li>
-            <li><a href="#program">C Programming</a></li>
-            <li><a href="#course">Courses</a></li>
-        </ul>
-        <div class="rightnav">
-            <input type="text" name="search" id="search">
-            <button class="btn btn-sm">Search</button>
+        <div class="app-menu-item" data-link="https://vanishgames.oragne.dev">
+          <img src="https://vanishgames.oragne.dev/favicon/apple-icon.png" alt="VanishGames" />
+          <p>VanishGames</p>
         </div>
-    </nav>
-
-    <section class="firstsection">
-        <div class="box-main">
-            <div class="firstHalf">
-                <h1 class="text-big" id="web">Web Technology
-                </h1>
-                <p class="text-small">
-                    HTML stands for HyperText Markup Language.
-                    It is used to design web pages using a markup
-                    language. HTML is the combination of Hypertext
-                    and Markup language. Hypertext defines the
-                    link between the web pages. A markup language
-                    is used to define the text document within tag
-                    which defines the structure of web pages.
-                    HTML is a markup language that is used by the
-                    browser to manipulate text, images, and other
-                    content to display it in the required format.
-                </p>
-
-
-            </div>
+        <div class="app-menu-item" data-link="https://kahootfetcher.oragne.dev">
+          <img src="https://kahootfetcher.oragne.dev/favicon/apple-icon.png" alt="KahootFetcher" />
+          <p>KahootFetcher</p>
         </div>
-    </section>
-
-    <section class="secondsection">
-        <div class="box-main">
-            <div class="firstHalf">
-                <h1 class="text-big" id="program">
-                    C Programming
-                </h1>
-                <p class="text-small">
-                    C is a procedural programming language. It
-                    was initially developed by Dennis Ritchie
-                    as a system programming language to write
-                    operating system. The main features of C
-                    language include low-level access to memory,
-                    simple set of keywords, and clean style,
-                    these features make C language suitable for
-                    system programming like operating system or
-                    compiler development.
-                </p>
-            </div>
+        <div class="app-menu-item" data-link="https://sga.oragne.dev">
+          <img src="https://sga.oragne.dev/favicon/apple-icon.png" alt="SGA Trainer" />
+          <p>SGA Trainer</p>
         </div>
-    </section>
+      </div>
+    </div>  
 
-    <section class="section">
-        <div class="paras">
-            <h1 class="sectionTag text-big">Java</h1>
-            <p class="sectionSubTag text-small">
-                Java has been one of the most popular
-                programming language for many years.
-                Java is Object Oriented. However it is
-                not considered as pure object oriented
-                as it provides support for primitive
-                data types (like int, char, etc) The
-                Java codes are first compiled into byte
-                code (machine independent code). Then
-                the byte code is run on Java Virtual
-                Machine (JVM) regardless of the
-                underlying architecture.
-            </p>
-        </div>
-    </section>
-
-    <footer class="background">
-        <p class="text-footer">
-            Copyright ©-All rights are reserved
-        </p>
-    </footer>
-</body>
-
+    <main>
+      <h1>Welcome to <span style="font-family: 'Arial Black', sans-serif;">VanishGames</span></h1>
+      <p>Play unblocked games at school and have <strong>fun!</strong></p>
+      <p>Discover a world of unblocked entertainment!</p>
+      <a href="games" class="button">Explore Games</a>
+    </main>
+  </body>
 </html>
